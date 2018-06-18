@@ -1,0 +1,18 @@
+<launch> 
+        <!--hpcl-small_sys-->
+        <node pkg="ORB_SLAM2" type="RGBD_ros" name="RGBD_ros"
+        args="/home/lifu/Documents/Orbslam/orbslam/Vocabulary/ORBvoc.txt /home/lifu/Documents/Orbslam/ORB_SLAM2_BAK/Examples/ROS/ORB_SLAM2/kinect2.yaml"
+        cwd="node" output="screen"></node>
+
+        <node pkg="rosbag" type="play" name="rosbag"
+        args="-r 0.5 /home/lifu/Desktop/toBJ/data/kinect8.bag"/>-->
+
+        <!--hpcl-small_sys-->
+        <node pkg="ORB_SLAM2" type="RGBD_ros" name="RGBD_ros"
+        args="/home/lifu/Documents/Orbslam/orbslam/Vocabulary/ORBvoc.txt /home/lifu/Documents/Orbslam/ORB_SLAM2_BAK/Examples/ROS/ORB_SLAM2/kinect2.yaml"
+        cwd="node" output="screen"></node>
+
+        <node pkg="rosbag" type="play" name="rosbag"
+        args="-r 0.5 /home/lifu/Desktop/toBJ/data/kinect8.bag"/>-->
+
+</launch>
